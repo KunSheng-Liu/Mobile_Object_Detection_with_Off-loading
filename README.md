@@ -4,7 +4,7 @@
 
 ## Android
 - Local object detection by `MobileNetv1` through the Tensorflow Lite
-- Input specification: 1* 300* 300* 3 tensor input format transform from RGB bitmap 
+- Input specification: 1 $/times$ 300* 300* 3 tensor input format transform from RGB bitmap 
 - Output specification: 1* 4* 10 tensor output format with [RectF boundingBox, Category category, ...]
 - Draw bounding box by a surface view and surface handler
 
