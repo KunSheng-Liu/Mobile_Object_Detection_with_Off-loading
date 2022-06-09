@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Final_Project_ver1</string>
+    <string name="app_name">Mobile_Object_Detection_with_Off-loading</string>
     <string name="title_home">Config</string>
     <string name="title_dashboard">Local</string>
     <string name="title_notifications">Remote</string>

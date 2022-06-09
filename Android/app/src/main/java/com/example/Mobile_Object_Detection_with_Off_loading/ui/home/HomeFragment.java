@@ -1,4 +1,4 @@
-package com.example.final_project_ver1.ui.home;
+package com.example.Mobile_Object_Detection_with_Off_loading.ui.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.final_project_ver1.databinding.FragmentHomeBinding;
+import com.example.Mobile_Object_Detection_with_Off_loading.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
 

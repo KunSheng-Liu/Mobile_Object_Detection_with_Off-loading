@@ -1,7 +1,6 @@
-package com.example.final_project_ver1;
+package com.example.Mobile_Object_Detection_with_Off_loading;
 
 import android.Manifest;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 
@@ -15,7 +14,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.final_project_ver1.databinding.ActivityMainBinding;
+import com.example.Mobile_Object_Detection_with_Off_loading.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 

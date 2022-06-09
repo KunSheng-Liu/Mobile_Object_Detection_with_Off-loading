@@ -1,4 +1,4 @@
-package com.example.final_project_ver1;
+package com.example.Mobile_Object_Detection_with_Off_loading;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.final_project_ver1", appContext.getPackageName());
+        assertEquals("com.example.Mobile_Object_Detection_with_Off_loading", appContext.getPackageName());
     }
 }

@@ -1,21 +1,17 @@
-package com.example.final_project_ver1.ui.notifications;
+package com.example.Mobile_Object_Detection_with_Off_loading.ui.notifications;
 
 import static android.content.ContentValues.TAG;
 
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
-import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.PixelFormat;
-import android.graphics.PorterDuff;
-import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.util.Log;
 import android.util.Size;
 import android.view.LayoutInflater;
@@ -23,8 +19,6 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.camera.core.Camera;
@@ -36,27 +30,16 @@ import androidx.camera.lifecycle.ProcessCameraProvider;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.LifecycleOwner;
-import androidx.lifecycle.ViewModelProvider;
 
-import com.example.final_project_ver1.R;
-import com.example.final_project_ver1.databinding.FragmentDashboardBinding;
-import com.example.final_project_ver1.databinding.FragmentNotificationsBinding;
-import com.google.android.gms.common.util.IOUtils;
+import com.example.Mobile_Object_Detection_with_Off_loading.R;
+import com.example.Mobile_Object_Detection_with_Off_loading.databinding.FragmentDashboardBinding;
+import com.example.Mobile_Object_Detection_with_Off_loading.databinding.FragmentNotificationsBinding;
 import com.google.common.util.concurrent.ListenableFuture;
 
-import org.tensorflow.lite.DataType;
-import org.tensorflow.lite.support.image.ImageProcessor;
-import org.tensorflow.lite.support.image.TensorImage;
-import org.tensorflow.lite.support.image.ops.ResizeOp;
-import org.tensorflow.lite.support.image.ops.Rot90Op;
-import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
-import org.tensorflow.lite.task.vision.detector.Detection;
 import org.tensorflow.lite.task.vision.detector.ObjectDetector;
 
 import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -65,11 +48,7 @@ import java.io.OutputStream;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.nio.ByteBuffer;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;

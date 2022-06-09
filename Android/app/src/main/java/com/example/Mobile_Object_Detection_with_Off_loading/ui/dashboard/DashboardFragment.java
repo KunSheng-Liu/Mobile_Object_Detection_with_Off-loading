@@ -1,47 +1,30 @@
-package com.example.final_project_ver1.ui.dashboard;
+package com.example.Mobile_Object_Detection_with_Off_loading.ui.dashboard;
 
 
 import static android.content.ContentValues.TAG;
 
-import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.ImageFormat;
-import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.PixelFormat;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.RectF;
-import android.graphics.YuvImage;
-import android.media.Image;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
-import android.renderscript.ScriptGroup;
 import android.util.Log;
 import android.util.Size;
-import android.view.Display;
 import android.view.LayoutInflater;
-import android.view.Surface;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.camera.core.Camera;
 import androidx.camera.core.CameraSelector;
 import androidx.camera.core.ImageAnalysis;
-import androidx.camera.core.ImageCapture;
-import androidx.camera.core.ImageCaptureException;
 import androidx.camera.core.ImageProxy;
 import androidx.camera.core.Preview;
 import androidx.camera.lifecycle.ProcessCameraProvider;
@@ -49,41 +32,24 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.LifecycleOwner;
 
-import com.example.final_project_ver1.OverlaySurface;
-import com.example.final_project_ver1.R;
-import com.example.final_project_ver1.databinding.FragmentDashboardBinding;
+import com.example.Mobile_Object_Detection_with_Off_loading.R;
+import com.example.Mobile_Object_Detection_with_Off_loading.databinding.FragmentDashboardBinding;
 import com.google.common.util.concurrent.ListenableFuture;
 
 
-import java.io.ByteArrayOutputStream;
-import java.io.File;
 import java.io.IOException;
-import java.nio.Buffer;
 import java.nio.ByteBuffer;
-import java.nio.MappedByteBuffer;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.TimerTask;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
 import org.tensorflow.lite.DataType;
-import org.tensorflow.lite.Interpreter;
-import org.tensorflow.lite.InterpreterApi;
-import org.tensorflow.lite.InterpreterFactory;
-import org.tensorflow.lite.InterpreterFactoryApi;
-import org.tensorflow.lite.support.common.FileUtil;
-import org.tensorflow.lite.support.common.TensorProcessor;
-import org.tensorflow.lite.support.common.ops.NormalizeOp;
 import org.tensorflow.lite.support.image.ImageProcessor;
 import org.tensorflow.lite.support.image.TensorImage;
 import org.tensorflow.lite.support.image.ops.ResizeOp;
 import org.tensorflow.lite.support.image.ops.Rot90Op;
-import org.tensorflow.lite.support.label.TensorLabel;
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
-import org.tensorflow.lite.task.core.BaseOptions;
 import org.tensorflow.lite.task.vision.detector.Detection;
 import org.tensorflow.lite.task.vision.detector.ObjectDetector;
 

@@ -1,4 +1,4 @@
-package com.example.final_project_ver1;
+package com.example.Mobile_Object_Detection_with_Off_loading;
 
 import org.junit.Test;
 
